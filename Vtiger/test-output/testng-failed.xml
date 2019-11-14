@@ -7,7 +7,7 @@
         <methods>
           <include name="closeApp"/>
           <include name="OpenApp"/>
-          <include name="testcase6"/>
+          <include name="testcase4"/>
         </methods>
       </class> <!-- com.vtiger.Testpom.TestCreateInvoice -->
     </classes>

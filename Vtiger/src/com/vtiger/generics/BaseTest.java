@@ -75,7 +75,7 @@ public class BaseTest implements Constants
 			Reporter.log("test" + name1 + " is failed", true);
 		
 		}
-	//	driver.close();
+		driver.close();
 	}
 
 

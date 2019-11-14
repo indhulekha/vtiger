@@ -21,7 +21,7 @@ import com.vtiger.pom.Invoice;
 public class TestCreateInvoice extends BaseTest
 {
 	@Test
-	public void validTitle() throws Exception
+	public void testcase1() throws Exception
 	{
 		String username = XL.getData(XLPATH, LoginSheet, 1, 0);
 		String password = XL.getData(XLPATH, LoginSheet, 1, 1);
@@ -74,8 +74,7 @@ public class TestCreateInvoice extends BaseTest
 		driver.findElement(By.xpath("//input[@id='qty1']")).sendKeys("3");
 		System.out.println("items added successfully");
 		ic.saveoption();
-		CreatingNewInvoice ni = new CreatingNewInvoice(driver);
-		ni.verifypage(driver, 5, title);
+		
 		
 		
 	}
@@ -125,6 +124,7 @@ public class TestCreateInvoice extends BaseTest
 		hm.invoiceModule();
 		driver.findElement(By.xpath("//input[@id='5']")).click();
 		driver.findElement(By.xpath("//table[@class='small']//input[@value='Mass Edit']")).click();
+		System.out.println("Edit page is displayed");
 		
 	}
 	
@@ -166,6 +166,7 @@ public class TestCreateInvoice extends BaseTest
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//td/img[@title='Last Viewed']")).click();
 		driver.findElement(By.xpath("//a[text()='Tata motors biling']")).click();
+		System.out.println("last viewed invoice is displayed");
 	}
 	
 	@Test
